@@ -2,8 +2,6 @@ let arrayListaSpesa = ["Pane", "Pasta", "Latte", "Uova"];
 
 for (let i = 0; i < arrayListaSpesa.length; i++){
 
-    document.querySelector("li").innerHTML = arrayListaSpesa[i]
-
     console.log(
         `
         ---LISTA SPESA CICLO FOR:---
@@ -15,6 +13,9 @@ for (let i = 0; i < arrayListaSpesa.length; i++){
 let i = 0;
 
 while (i < arrayListaSpesa.length){
+    
+    document.getElementById("lista").innerHTML += "<li>" + arrayListaSpesa[i] + "</li>"
+    
     console.log(
         `
         ---LISTA SPESA CICLO WHILE:---
@@ -22,9 +23,10 @@ while (i < arrayListaSpesa.length){
         ` 
     )
 
-    if (i < 4){
+/*     if (arrayListaSpesa[i] == "Latte"){
         break;
-    }
-
+    } */
+    
+    i++;
 }
 
