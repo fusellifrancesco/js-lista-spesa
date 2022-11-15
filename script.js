@@ -9,5 +9,19 @@ for (let i = 0; i < arrayListaSpesa.length; i++){
     );
 }
 
+let i = 0;
 
+while (i < arrayListaSpesa.length){
+    console.log(
+        `
+        ---LISTA SPESA CICLO WHILE:---
+        ${arrayListaSpesa};
+        ` 
+    )
+
+    if (i < 4){
+        break;
+    }
+
+}
 
