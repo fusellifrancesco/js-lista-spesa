@@ -2,7 +2,7 @@ let arrayListaSpesa = ["Pane", "Pasta", "Latte", "Uova"];
 
 for (let i = 0; i < arrayListaSpesa.length; i++){
 
-    document.getElementById("lista-spesa").innerHTML = arrayListaSpesa[i]
+    document.querySelector("li").innerHTML = arrayListaSpesa[i]
 
     console.log(
         `
